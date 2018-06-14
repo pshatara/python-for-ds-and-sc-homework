@@ -6,7 +6,7 @@ from numpy import matrix, array, random, min, max
 import pylab as plb
 
 # Cerate a list A of 600 random numbers bound between (0:10)
-A = random.randint(1, 10, 600)
+A = list(random.randint(1, 10, 600))
 
 # Create an array B with 500 elements bound in the range [-3*pi:2*pi]
 B = random.uniform(-3 * plb.pi, 2 * plb.pi, 500)
@@ -14,7 +14,7 @@ B = random.uniform(-3 * plb.pi, 2 * plb.pi, 500)
 def overwrite_elements(arr):
     # Using if, for or while, create a function that overwrites every element in A that falls outside 
     # of the interval [2:9), and overwrite that element with the average between the smallest and largest element in A
-    avg = (arr.min() + arr.max()) / 2
+    avg = (9 + 1) / 2
     new_arr = []
 
     for value in arr:
