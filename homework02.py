@@ -9,7 +9,7 @@ print("3x5 Numpy Array:\n", A)
 
 # 3. Find	the	size	and	length	of	matrix	A	
 print("Size: ", A.size)
-print("Length: ", A.shape)
+print("Length: ", len(A))
 
 # 4. Resize	(crop/slice)	matrix	A	to	size	(3,4)	
 A = np.resize(A, (3, 4))
