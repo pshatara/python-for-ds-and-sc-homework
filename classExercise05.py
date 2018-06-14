@@ -48,6 +48,7 @@ plb.plot(D, plb.sin(D), color='red', linewidth=1.5, linestyle='-.', label='sin')
 plb.plot(D, plb.cos(D), color='blue', linewidth=2.5, linestyle='--', label='cos')
 
 # Create some space on top and boZom of the plot (on the y axis) and show the grid
+plb.ylim(-1.5, 1.5)
 plb.grid()
 
 # Specify the following: title, Y-axis label and legend to fit in the best way
