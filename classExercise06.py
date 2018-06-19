@@ -10,7 +10,7 @@ A = {
 
 def assign_values(dict):
     for key in dict:
-        A[key] = plb.randint(0, 11)
+        dict[key] = plb.randint(0, 11)
     return dict
 
 B = assign_values(A)
